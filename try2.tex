@@ -1,0 +1,208 @@
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{multirow}
+\usepackage{blindtext}
+
+
+% -------------------- FONT --------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+	\vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & #2 \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+	
+	% -------------------- HEADING--------------------
+	\begin{flushright}
+		\vspace{50 cm}
+		\color{gray}
+		\item
+		created using LaTeX programming language on August 25th, 2023
+	\end{flushright}
+	
+		
+	\begin{center}
+		\textbf{\Huge \scshape Rahul Sinha} \\ \vspace{8pt}
+		\small
+		\faIcon{github}
+		\href{https://github.com/rahulsinhabspr}{\underline{https://github.com/rahulsinhabspr}} $  $
+		\faIcon{linkedin}
+		\href{www.linkedin.com/in/rahulsinhabspr}{\underline{www.linkedin.com/in/rahulsinhabspr}} $  $
+		\faIcon{envelope}
+		\href{mailto:rahulsinhabspr@live.com}
+		{\underline{rahulsinhabspr@live.com}}
+		\newline
+		\faIcon{mobile}
+		{$\underline{+91-7401361223}$}
+		\faIcon{home}
+		{$\underline{Bengaluru}$}
+	\end{center}
+	
+	% --------------------Professional Summary --------------------
+	\section{Professional Summary}
+	More than 9 years' experience as a Tivoli Monitoring Administrator, SCOM Administrator, Systems Administrator, Application Support Specialist, and Technical Support Specialist. Developed multiple shell scripts and PowerShell scripts to automate bulk requests and reduce workload. Recreated LDAP authentication software using C\#, Soap Request, and PowerShell for the Ticketing Tool (Maximo). Designed alert detail reports for the Platform Team. Created and modified alerts for Linux, AIX, and Windows servers. \\
+	
+	% -------------------- SKILLS --------------------
+	\section{Skills}
+	\begin{tabular}{ m{0.23\paperwidth}  m{0.65\paperwidth}  } 
+			
+			\textbf{Back End Development} & Python,PowerShell,Shell Scripting,PHP,C\#,LaTeX.  \\ 
+			
+			\textbf{Front End Development} & Html,css,JavaScript,JQuery. \\
+			
+			\textbf{Server Support} & Windows Server 2012, Active Directory,IBM Domino Server, IBM Notes. \\
+			
+			\textbf{Application Support} & IBM Tivoli Monitoring(ITM 6), Microsoft System Center Operations Manager (SCOM 2012), Cisco (Gemalto) , Novell Imanager, Norton. \\ 
+			
+			\textbf{Technical Support} & Windows, Mac OS, Android Phone. \\ 
+			
+		\end{tabular}
+	
+	
+	% -------------------- EXPERIENCE --------------------
+	\section{Experience}
+	\resumeSubHeadingListStart
+	
+	\resumeProjectHeading
+	{\textbf{Kyndryl Solutions Pvt. Ltd.} $|$ \footnotesize\emph{ITM Administrator, ITM-6)}}{Sep. 2021 -- Present}
+	\resumeItemListStart
+	\resumeItem{Configuring and Managing HubTems, RTEMS, TEPS and BlueCare.}
+	\resumeItem{Managing Netcool Probes, Auto ticketing, and Alert Mapping.}
+	\resumeItem{Installation, Configuring and Uninstall of Tivoli Agents in (Windows,Linux, Aix, vios ESX,Cisco ucs,Domino,Vmware and oracle) Servers.}
+	\resumeItem{Built client-specific situations/alerts.}
+	\resumeItemListEnd
+		
+	\resumeProjectHeading
+	{\textbf{IBM India Pvt. Ltd.} $|$ \footnotesize\emph{SCOM Administrator, SCOM-2012)}}{Dec. 2019 -- Aug. 2021}
+	\resumeItemListStart
+	\resumeItem{Configuring and Managing SCOM-2012 Operations Manager and Data Warehouse.}	
+	\resumeItem{Installation, Modification and Uninstall of SCOM Agents, SCOM Gateway Servers and  SCOM Management Pack.}
+	\resumeItem{SCOM Custom Management Pack creation, modification, and deletion.}
+	\resumeItem{Overriding Rules/Monitors based on Customer Requirements in SCOM-2012 Operations Manager.}
+	\resumeItem{Built client-specific dashboard for the SCOM Web Interface.}
+	\resumeItem{Renewal of Certificates in SCOM Gateway Servers.}	
+	\resumeItemListEnd
+	
+	\resumeProjectHeading
+	{\textbf{IBM India Pvt. Ltd.} $|$ \footnotesize\emph{System Administrator, Active Directory, IBM Domino Server}}{Feb. 2016 -- Nov. 2019}
+	\resumeItemListStart
+	\resumeItem{Distribution List, Mailin Database, and Domino Access Group creation, deletion, and maintenance.}
+	\resumeItem{User Management and Certificate Management in IBM Lotus Notes.}
+	\resumeItem{ID and user certificate creation, deletion, and maintenance for IBM Lotus Notes.}
+	\resumeItem{Managing and deleting user data in Novell Imanager.}
+	\resumeItem{Active Directory user and group administration.}
+	\resumeItem{User management in Cisco VPN (Gemalto) and Novell Imanager.}
+	\resumeItem{File and folder services, group policy management, access to terminal servers, and RDP access on Windows Server.}	
+	\resumeItemListEnd
+
+	\resumeProjectHeading
+	{\textbf{Sutherland Global Services} $|$ \footnotesize\emph{Consultant, NortonLive Spyware and Virus Removal Services}}{June 2014 -- Feb. 2016}
+	\resumeItemListStart
+	\resumeItem{Provided technical support to Symantec (NortonLive Spyware and Virus Removal Services) End Users.}
+	\resumeItem{Retained many Symantec customers and assisted them to renew the subscription which benefited the company economically.}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+	
+			% -------------------- EDUCATION --------------------
+		\section{Education}
+		\resumeSubHeadingListStart
+		
+		\resumeSubheading
+		{Indian Institute of Information Technology Design and Manufacturing, Kancheepuram}{May 2014}
+		{Master of design, Communication Systems}{7.55(CGPA)}
+		
+		\resumeSubheading
+		{Bhilai Institute of Technology, Durg  \footnotesize{(affiliated to CSVTU)}}{June 2009}{Bachelor of Technology, Electronics and Telecommunication Engineering}{60.23\%}
+		
+		\resumeSubheading
+		{D.A.V Public School, Bishrampur}{2005}
+		{Class XII}{79.80\%}
+		
+		\resumeSubheading
+		{D.A.V Public School, Bishrampur}{2003}
+		{Class XII}{82.33\%}
+
+		\resumeSubHeadingListEnd		
+		
+\end{document}
